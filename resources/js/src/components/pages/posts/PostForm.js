@@ -47,11 +47,11 @@ class Form extends React.Component
                                         : ""
                                 }`}
                             >
-                                <label>Post title</label>
+                                <label>Event title</label>
                                 <input
                                     type="text"
                                     className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    placeholder="Post title"
+                                    placeholder="Event title"
                                     onChange={this.props.handleFieldChange}
                                     value={
                                         this.props.post.title
@@ -66,6 +66,117 @@ class Form extends React.Component
                                     </div>
                                 ) : null}
                             </div>
+                            {/* //vip ticketing */}
+                            <div
+                                className={`form-group ${
+                                    this.props.validation_errors.ticket
+                                        ? "has-error"
+                                        : ""
+                                }`}
+                            >
+                                <label>VIP Ticket</label>
+                                <input
+
+                                    className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    
+                                    onChange={this.props.handleFieldChange}
+                                    value={
+                                        this.props.post.ticket
+                                            ? this.props.post.ticket
+                                            : ""
+                                    }
+                                    name="ticket"
+                                />
+                                    
+                                {this.props.validation_errors.ticket != null ? (
+                                    <div className="help-block">
+                                        {this.props.validation_errors.ticket[0]}
+                                    </div>
+                                ) : null}
+                            </div>
+                            <div
+                                className={`form-group ${
+                                    this.props.validation_errors.price
+                                        ? "has-error"
+                                        : ""
+                                }`}
+                            >
+                                <label>Price</label>
+                                <input
+                                    type="text"
+                                    className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="Price"
+                                    onChange={this.props.handleFieldChange}
+                                    value={
+                                        this.props.post.price
+                                            ? this.props.post.price
+                                            : ""
+                                    }
+                                    name="price"
+                                />
+                                {this.props.validation_errors.price != null ? (
+                                    <div className="help-block">
+                                        {this.props.validation_errors.price[0]}
+                                    </div>
+                                ) : null}
+                            </div>
+                            {/* start regular */}
+                            <div
+                                className={`form-group ${
+                                    this.props.validation_errors.ticket1
+                                        ? "has-error"
+                                        : ""
+                                }`}
+                            >
+                                <label>Regular Ticket</label>
+                                <input
+
+                                    className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    
+                                    onChange={this.props.handleFieldChange}
+                                    value={
+                                        this.props.post.ticket1
+                                            ? this.props.post.ticket1
+                                            : ""
+                                    }
+                                    name="ticket1"
+                                />
+                                    
+                                {this.props.validation_errors.ticket1 != null ? (
+                                    <div className="help-block">
+                                        {this.props.validation_errors.ticket1[0]}
+                                    </div>
+                                ) : null}
+                            </div>
+                            <div
+                                className={`form-group ${
+                                    this.props.validation_errors.price1
+                                        ? "has-error"
+                                        : ""
+                                }`}
+                            >
+                                <label>Regular Price</label>
+                                <input
+                                    type="text"
+                                    className="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    placeholder="Regular Price"
+                                    onChange={this.props.handleFieldChange}
+                                    value={
+                                        this.props.post.price1
+                                            ? this.props.post.price1
+                                            : ""
+                                    }
+                                    name="price1"
+                                />
+                                {this.props.validation_errors.price1 != null ? (
+                                    <div className="help-block">
+                                        {this.props.validation_errors.price1[0]}
+                                    </div>
+                                ) : null}
+                            </div>
+                            
+
+                            {/* end regular */}
                             <div
                                 className={`form-group ${
                                     this.props.validation_errors.content

@@ -45,7 +45,7 @@ class Index extends React.Component
                                         className="flex flex-row justify-center items-center border-dashed border-2 p-5 hover:border-#72afd2 border-gray-600 text-gray-600 overflow-hidden rounded my-4 sm:w-full lg:w-1/2"
                                     >
                                         <i className="fa fa-edit px-3"></i>
-                                        Start new post
+                                        Start new Event
                                     </Link>
                                 </div>
                                 <Spinner show={this.props.post.list_spinner} />

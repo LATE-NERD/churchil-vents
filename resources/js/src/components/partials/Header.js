@@ -46,7 +46,7 @@ class Header extends React.Component {
                         <b>R</b>R
                     </span>
                     <span className="logo-lg">
-                        <b>Refer</b>route
+                        <b>Churchil</b>Events
                     </span>
                 </a>
                 <nav className="navbar navbar-static-top">

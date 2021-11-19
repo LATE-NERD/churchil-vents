@@ -71,6 +71,18 @@ class View extends React.Component {
                                 <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-4xl md:text-4xl">
                                     {this.props.post.post.title}
                                 </h1>
+                                <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-4xl md:text-4xl">
+                                    {this.props.post.post.ticket}
+                                </h1>
+                                <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-4xl md:text-4xl">
+                                    {this.props.post.post.price}
+                                </h1>
+                                <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-4xl md:text-4xl">
+                                    {this.props.post.post.ticket1}
+                                </h1>
+                                <h1 className="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-4xl md:text-4xl">
+                                    {this.props.post.post.price1}
+                                </h1>
                                 <p className="text-sm md:text-base font-normal text-gray-600">
                                     {this.props.post.post.date_formatted}
                                 </p>

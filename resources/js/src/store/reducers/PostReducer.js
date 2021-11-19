@@ -5,6 +5,10 @@ const initialState = {
     post: {
         id: "",
         title: "",
+        ticket: "",
+        price: "",
+        ticket1: "",
+        price1: "",
         content: "",
         image: "",
         likes_counter: 0
@@ -140,6 +144,10 @@ const postReducer = function (state = initialState, action) {
                 post: {
                     id: "",
                     title: "",
+                    ticket: "",
+                    price: "",
+                    ticket1: "",
+                    price1: "",
                     content: "",
                     image: "",
                     likes_counter: 0

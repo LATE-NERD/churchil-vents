@@ -126,7 +126,7 @@ class Login extends Component {
             <div className="container">
                 <div className="login-box">
                     <div className="login-logo">
-                        <b>Refer</b>Route
+                        <b>Churchil </b>Events
                     </div>
                     <div className="login-box-body">
                         <p className="login-box-msg text-3xl">

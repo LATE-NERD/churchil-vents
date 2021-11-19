@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 const Footer  = (props) => {
   return props.location.pathname != '/login'?(
       <footer className="main-footer">
-          <strong>Referroute &copy; 2020.</strong>
+          <strong>NANCY &copy; 2021.</strong>
       </footer>
   ):null;
 };

@@ -67,7 +67,7 @@ class Add extends React.Component
             <div className="content-wrapper">
                 <section className="content-header">
                     <h1>
-                        Start new post
+                        Start new Event
                     </h1>
 
                 </section>

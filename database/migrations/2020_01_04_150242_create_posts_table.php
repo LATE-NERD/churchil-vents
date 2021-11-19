@@ -18,6 +18,10 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('content')->nullable();
             $table->string('image')->nullable();
+            $table ->string('ticket');
+            $table ->string('price');
+            $table ->string('ticket1');
+            $table ->string('price1');
             $table->bigInteger('likes_counter')->nullable()->default(0);
             $table->bigInteger('user_id')->nullable()->unsigned();
             $table->timestamps();

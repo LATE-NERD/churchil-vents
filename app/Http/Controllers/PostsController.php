@@ -50,7 +50,12 @@ class PostsController extends Controller
     {
 
         $this->validate($request, [
+            
             'title' => 'required',
+            'ticket' => 'required',
+            'ticket1' => 'required',
+            'price' => 'required',
+            'price1' => 'required',
             'content' => 'required',
             'image' => 'required',
         ]);
@@ -59,6 +64,11 @@ class PostsController extends Controller
 
         $post->title = $request->input('title');
         $post->content = $request->input('content');
+        $post->price = $request->input('price');
+        $post->ticket = $request->input('ticket');
+        $post->price1 = $request->input('price1');
+        $post->ticket1 = $request->input('ticket1');
+        
         $post->user_id = auth("api")->user()->id;
         if($request->hasFile('image')) {
             $file = $request->file('image');
@@ -118,6 +128,12 @@ class PostsController extends Controller
         $rules = [
             'title' => 'required',
             'content' => 'required',
+            'ticket1' => 'required',
+            'ticket1' => 'required',
+            'ticket' => 'required',
+            'price1' => 'required',
+            'price' => 'required',
+            
         ];
 
         if($post->image == "" || ($post->image != "" && !\File::exists('uploads/' . $post->image))) {
@@ -127,7 +143,10 @@ class PostsController extends Controller
         $this->validate($request, $rules);
 
         $post->title = $request->input('title');
-
+        $post->ticket = $request->input('ticket');
+        $post->ticket1 = $request->input('ticket1');
+        $post->price = $request->input('price');
+        $post->price1 = $request->input('price1');
         $post->content = $request->input('content');
 
         if($request->hasFile('image')) {
